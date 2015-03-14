@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/arya-s/f1bet.git"
+    "url": "https://github.com/arya-s/f1bet-front.git"
   },
   "author": "arya-s",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/arya-s/f1bet/issues"
+    "url": "https://github.com/arya-s/f1bet-front/issues"
   },
-  "homepage": "https://github.com/arya-s/f1bet",
+  "homepage": "https://github.com/arya-s/f1bet-front",
   "dependencies": {
     "bower": "^1.3.12",
     "grunt": "^0.4.5",
