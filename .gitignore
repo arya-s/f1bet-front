@@ -1,0 +1,16 @@
+venv
+*.pyc
+staticfiles
+.env
+node_modules
+logs
+*.log
+pids
+*.pid
+*.seed
+.grunt
+.lock-wscript
+build/Release
+bower_components
+.idea
+config.json

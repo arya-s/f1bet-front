@@ -1,0 +1,30 @@
+{
+  "name": "f1bet-front",
+  "version": "0.0.2",
+  "description": "A simple reddit bot for betting on F1 races.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/arya-s/f1bet.git"
+  },
+  "author": "arya-s",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/arya-s/f1bet/issues"
+  },
+  "homepage": "https://github.com/arya-s/f1bet",
+  "dependencies": {
+    "bower": "^1.3.12",
+    "grunt": "^0.4.5",
+    "grunt-cli": "^0.1.13",
+    "grunt-bower-task": "^0.4.0",
+    "grunt-browserify": "^3.5.0",
+    "grunt-contrib-jshint": "^0.11.0",
+    "grunt-contrib-uglify": "^0.8.0",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-shell": "^1.1.2"
+  }
+}
