@@ -7,8 +7,7 @@ def index(request):
 
     if request.method == 'POST':
 
-        print request.POST
-
-        return JsonResponse('ok')
+        print request.body
+        return JsonResponse({ 'driver': 'vettel' })
 
     return Http404
