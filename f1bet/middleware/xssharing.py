@@ -27,7 +27,7 @@ EXAMPLE USAGE:
 # except:
 XS_SHARING_ALLOWED_ORIGINS = 'http://f1bet.herokuapp.com'
 XS_SHARING_ALLOWED_METHODS = ['POST', 'GET', 'OPTIONS', 'PUT', 'DELETE']
-XS_SHARING_ALLOWED_HEADERS = ['application/json']
+XS_SHARING_ALLOWED_HEADERS = ['Content-Type']
 
 class XsSharingMiddleware(object):
     """
