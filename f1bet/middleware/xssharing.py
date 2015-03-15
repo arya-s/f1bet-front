@@ -27,7 +27,7 @@ EXAMPLE USAGE:
 # except:
 XS_SHARING_ALLOWED_ORIGINS = '*'
 XS_SHARING_ALLOWED_METHODS = ['POST', 'GET', 'OPTIONS', 'PUT', 'DELETE']
-XS_SHARING_ALLOWED_HEADERS = ['Content-Type', 'Cache-Control']
+XS_SHARING_ALLOWED_HEADERS = ['Content-Type', 'Content-Length']
 
 class XsSharingMiddleware(object):
     """
