@@ -7,10 +7,8 @@ def index(request):
 
     if request.method == 'POST':
 
-        payload = request.method.get('payload');
-
-        print payload
+        print request
 
         return JsonResponse('ok')
 
-    return Http404;
+    return Http404
