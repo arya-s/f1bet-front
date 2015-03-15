@@ -29,7 +29,7 @@ XS_SHARING_ALLOWED_ORIGINS = 'http://f1bet.herokuapp.com/'
 XS_SHARING_ALLOWED_METHODS = ['POST', 'GET', 'OPTIONS', 'PUT', 'DELETE']
 XS_SHARING_ALLOWED_HEADERS = ['application/json']
 
-class XsSharing(object):
+class XsSharingMiddleware(object):
     """
         This middleware allows cross-domain XHR using the html5 postMessage API.
 
