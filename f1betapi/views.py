@@ -6,6 +6,11 @@ from django.http import Http404
 def index(request):
 
     if request.method == 'POST':
-        return JsonResponse({ 'ok': 'vettel' })
 
-    return Http404
+        payload = request.method.get('payload');
+
+        print payload
+
+        return JsonResponse('ok')
+
+    return Http404;
