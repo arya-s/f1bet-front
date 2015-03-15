@@ -9,13 +9,10 @@ def index(request):
 
     if request.method == 'POST':
 
-        data = json.loads(request.body)
+        data = json.load(request.body)
         print data
 
-        if data.get('driver') == 'vettel'
-            return JsonResponse({ 'pos': '3' })
-        else
-            return JsonResponse({ 'data': 'unkown driver'})
+        return JsonResponse({ 'data': 'unkown driver'})
 
 
     return Http404
