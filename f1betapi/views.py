@@ -9,11 +9,7 @@ def index(request):
 
     if request.method == 'POST':
 
-        data = json.loads(request.body)
-
         print request
-        print data
-
 
         return JsonResponse({ 'driver': 'vettel' })
 
