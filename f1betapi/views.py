@@ -5,4 +5,6 @@ from django.http import Http404
 @csrf_exempt
 def index(request):
 
-    return JsonResponse(request)
+    payload = request.POST.get('payload', None)
+
+    return JsonResponse(payload)
