@@ -7,7 +7,7 @@ def index(request):
 
     if request.method == 'POST':
 
-        print request
+        print request.POST
 
         return JsonResponse('ok')
 
