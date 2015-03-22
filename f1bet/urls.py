@@ -1,4 +1,5 @@
 from django.conf.urls import url, include
+from django.contrib import admin
 from f1betcore.models import RedditUser, Team, Driver, DriverShort, Race, Bet
 from rest_framework import serializers, viewsets, routers
 
