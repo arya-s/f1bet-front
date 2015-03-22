@@ -17,6 +17,7 @@ router.register(r'users', RedditUserViewSet)
 
 urlpatterns = [
     url(r'^', include('f1betcore.urls')),
+    url(r'^admin/', include(admin.site.urls)),
     url(r'^api/', include(router.urls)),
     url(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework'))
 ]
