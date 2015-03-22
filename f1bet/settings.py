@@ -36,12 +36,9 @@ TEMPLATE_LOADERS = (
 
 ALLOWED_HOSTS = ['localhost', '.herokuapp.com']
 
-
-
 # Application definition
 
 INSTALLED_APPS = (
-    'django_admin_bootstrapped',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -60,7 +57,6 @@ MIDDLEWARE_CLASSES = (
     'django.contrib.auth.middleware.SessionAuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'f1bet.middleware.xssharing.XsSharingMiddleware',
 )
 
 ROOT_URLCONF = 'f1bet.urls'
