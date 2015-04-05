@@ -36,6 +36,12 @@ TEMPLATE_LOADERS = (
 
 ALLOWED_HOSTS = ['localhost', '.herokuapp.com']
 
+# CORS
+CORS_ORIGIN_ALLOW_ALL = False
+CORS_ORIGIN_WHITELIST = (
+    'f1bet.herokuapp.com'
+)
+
 # Application definition
 
 INSTALLED_APPS = (
@@ -46,12 +52,14 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django_extensions',
+    'corsheaders',
     'f1betcore',
     'rest_framework',
 )
 
 MIDDLEWARE_CLASSES = (
     'django.contrib.sessions.middleware.SessionMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
