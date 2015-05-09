@@ -6,7 +6,6 @@ import json
 class RedditUser(models.Model):
     name = models.TextField()
     flair = models.TextField(null=True)
-    last_active = models.DateTimeField(auto_now=True)
     points = models.TextField(default="[]")
 
     def get_points_list(self):
@@ -97,7 +96,7 @@ class Race(models.Model):
 class Bet(models.Model):
     user = models.ForeignKey(RedditUser)
     race = models.ForeignKey(Race)
-    timestamp = models.DateTimeField(auto_now=True)
+    timestamp = models.TextField()
     drivers = models.ManyToManyField(Driver)
 
     def __unicode__(self):
